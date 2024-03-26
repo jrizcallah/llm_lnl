@@ -1,0 +1,45 @@
+No other data provider offers the granularity of data like we do, making our approach unique in the industry
+Kalibri Labs' platform delivers concise, quantitative, and actionable output driven by AI and machine learning.
+35,000+ Hotels updated daily
+334 Markets
+975 sub-markets
+20 rate categories
+7 channels
+3 revenue types
+100M transactions added monthly
+
+Kalibri Labs leads the industry in revenue types, metrics measured, data granularity, and predictive power
+
+Revenue Data:
+Kalibri Labs - Hotel-Collected Revenue, Guest-Paid Revenue, COPE* Revenue
+Other providers - Hotel-Collected Revenue
+
+Metrics & Data:
+Kalibri Labs - Occupancy, ADR - 3 Types, RevPAR - 3 Types, 7 Channels, 20 Rate Categories, Length of Stay, Acquisition Cost, COPE* %
+Other providers - Occupancy, ADR - 1 Type, RevPAR - 1 Type
+
+Data Granularity:
+Kalibri Labs - 334 Markets, 975 Submarkets, Nested Metrics
+Other providers - 165 Markets, 650 Submarkets
+
+Data Frequency & Timeframes:
+Kalibri Labs - Daily Supply Changes, Historical Dates, Future Dates
+Other providers - Monthly Supply Changes, Historical Dates
+
+*COPE = Contribution to Operating Profit and Expenses which is calculated by taking the Guest Paid Revenue and removing direct booking costs such as commissions, channel, and transaction fees.
+
+Predictive Forecast & Insights:
+The Kalibri Labs Predictive model delivers forward-looking daily forecasts by rate category for a subject hotel and its comp set, submarket, and market backed by machine learning and AI. We track distribution channels, rate categories, length of stay, lead time, loyalty contribution, acquisition costs, and revenue types.
+We enable hotels to understand how much revenue is paid by guests and how much remains after paying customer acquisition costs. Our platform helps hotel management identify the most profitable mix of business after commissions, loyalty costs, and channel and transaction fees are taken into account
+
+3 Revenue Types Expose Opportunity to Manage Acquisition Costs
+The digital market means less control to access customers and higher costs to acquire them. And when you have higher costs, that means asset values are subject to decline because a hotel has to pay more to generate its revenue. Customer acquisition costs in the U.S. range between 15-25% of guest paid revenue. It's time to get a deeper understanding of what your hotel keeps after paying to acquire your customers; your COPE Revenue.
+
+Kalibri Labs’ analytics on revenue capture are critical to your performance: how much do you keep of what guests pay?
+Revenue Capture % has returned to the pre-COVID pattern. Even when revenue is rising, increases in customer acquisition costs have been rising faster in the U.S., challenging profits and leading to reduced hotel asset values.
+
+HummingbirdPXM is the only profit-driven commercial strategy platform
+Kalibri Labs HummingbirdPXM is a purpose-built commercial strategy platform for hotels designed to optimize efficiency in generating revenue. Whether it's through direct sales, digital channels, loyalty, other promotions, or through pricing improvement, hotels will have the means to increase profit contribution and grow asset value.
+
+"If you’re considering doing something differently for a competitive edge, utilize Kalibri Labs’ HummingbirdPXM and get focused on your Optimal Business Mix." -Lara S., Corporate Director, Revenue, OTO Development
+

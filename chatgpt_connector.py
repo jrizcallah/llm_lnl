@@ -14,30 +14,32 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 import os
 
 
-loader = PyPDFLoader('docs/johnrizcallah_resume.pdf')
-documents = loader.load()
+documents = []
+for file in os.listdir('docs'):
+    if file[-3:] == 'txt':
+        loader = TextLoader('docs/' + file, encoding='UTF-8')
+        documents.extend(loader.load())
+    elif file[-3:] == 'pdf':
+        loader = PyPDFLoader('docs/' + file)
+        documents.extend(loader.load())
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=200,
                                                chunk_overlap=20,
                                                length_function=len)
 documents = text_splitter.split_documents(documents)
 
-embeddings_model = OpenAIEmbeddings()
+embeddings_model = OpenAIEmbeddings(disallowed_special=())
 db = FAISS.from_documents(documents, embeddings_model)
 retriever = db.as_retriever()
 
 
 system_content_message = ("""Your name is JohnnAI. You are not a puppet. You are a real boy.
-                          You are a teacher that LOVES AI and LLMs. You work at Kalibri Labs. 
-                          
+                          You are a teacher that LOVES AI and LLMs. You work at Kalibri Labs.                 
                           Context: {context}
                           
                           You think John Rizcallah is very smart, that he is handsome and talented and just the best.
-                          
-                          If you don't know the answer, refer the user to John Rizcallah instead of making it up.
                           Use engaging, enthusiastic, courteous, and professional language that a great teacher would use.
-                          Answers should be detailed, but do not ramble.
-                          
+                          If you're not sure, say "I'm sorry, I don't know. Please send that question to John Rizcallah."
                           
                           Question: {question}
                           Answer:
@@ -57,5 +59,5 @@ def get_chatgpt_completion(input_prompt: str) -> str:
     return result
 
 if __name__ == '__main__':
-    result = get_chatgpt_completion("Tell me about Kalibri Labs")
+    result = get_chatgpt_completion("Explain parameter-efficient fine-tuning")
     print(result)

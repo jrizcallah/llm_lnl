@@ -1,0 +1,83 @@
+﻿John Rizcallah	Data Scientist
+LinkedIn: https://www.linkedin.com/in/john-rizcallah/ 	Github: https://github.com/jrizcallah 
+Email: john.rizcallah@gmail.com	Phone: (806) 410-6750
+Denver, Colorado	
+
+John Rizcallah SUMMARY
+An experienced data scientist and machine learning engineer, specialized in time series forecasting and natural language processing. Past projects include designing an algorithm that integrates with the Google API to map unclean corporate descriptions to standardized corporation names using NLP methods, constructing a complex reinforcement learning AI for futures trading, and detecting bubbles in the FX markets by Sequential Monte Carlo methods. A confident and charismatic speaker with years of sales experience, who will jump at the chance to present technical results to a non-technical audience. A detail-oriented risk taker, a collaborative multitasker, and an innovative researcher.
+
+John Rizcallah SKILLS
+MATHEMATICS: Linear Algebra, Statistics, Probability, Modeling, Experimental Design
+MACHINE LEARNING: Regression, Classification, Time-Series Analysis, Natural Language Processing, Neural Networks, Reinforcement Learning, Feature Engineering, Random Forest, Text Mining, Supervised/Unsupervised Learning, Sci-kit Learn, SpaCy, Tensorflow
+DATA SCIENCE: Python, SQL, Visualization, Automation, Reporting, Hypothesis Testing, Pandas, Numpy, Neo4j, Matplotlib, Seaborn, Plotly, Dash
+SOFT SKILLS: Written Communication, Verbal Communication, Multitasking, Quantitative Research, Qualitative Research, Public Speaking, Innovation, Attention to Detail, Creativity
+
+John Rizcallah EXPERIENCE
+Kalibri Labs	June 2022 – Present
+Data Scientist
+• Reduced running time of the Optimization algorithm by 80%
+• Designed and coded an algorithm that leverages the Google Search API to deduplicate low-quality string data into fuzzy groups and then map those to corporate names with 93% accuracy, increasing the speed of account mapping by over 50 times
+• Increased speed, efficiency, and security of a forecasting algorithm, decreasing execution time by approximately 20%
+• Devised, documented, and implemented a new hyperparameter tuning system
+• Created a client health (customer churn) model using Salesforce data, saving the customer service team 70+ hours each month
+John the Quant	June 2021 – Present
+YouTube Creator – Data Science and Quantitative Analysis	
+• Completed expository projects in all steps of the data science process; acquisition, storage, input/output, analysis, and reporting
+• A selection of videos:
+o The Machine Learning Process
+• A discussion of my interpretation of the ML process:
+• Understand the problem; Get Data; Clean, explore, transform, and engineer features; Encode features; Select Features; Model; Evaluate; Repeat
+o Case Study: Predicting Vehicle Price and Trim
+• In-depth look at my solution to a common data science challenge project
+o Superfast Course: Linear Regression
+• Three and a half hours, 18 chapters, of information on Linear Regression; from ordinary least squares and statistical inference to gradient descent and regularization, with applications in Python
+o Automated Reporting in Python and Excel 
+• Part 1: https://www.youtube.com/watch?v=UFb-hdKp51w&t=7s  
+• Part 2: https://www.youtube.com/watch?v=gPuC7nHpQWA&t=15s 
+• https://www.youtube.com/channel/UCV8B9jnB-a0pofNzBo520hA 
+
+Personal Project	May 2021 – June 2021
+CNN-LSTM Forecasting and Portfolio Optimization
+• Wrangled, compiled, cleaned, and explored datasets from multiple databases
+• Devised an economic factor model of stock returns and created cutting-edge neural network models to predict behavior of each stock
+Springboard	Sept 2020 – May 2021
+Data Science Fellow	
+• Visualization, Time-Series Analysis: Named the borough of London in which property investments have the fastest growth in value
+• NLP: Cleaned and tokenized text to predict review ratings; identified the words that most indicate positive/negative sentiment
+• Business Impact: Used a random forest model for price analysis and to make property improvement suggestions to a ski resort; estimated revenue increases from $33 million to $50 million annually
+• Used K Nearest Neighbors, Regression, Clustering, Bayesian analysis, ARIMA modeling, Cosine Similarity, and other models to solve business problems as needed
+• Built the computer skills, analytical skills, and communication skills necessary for success as a data scientist
+Projects
+Ensemble Reinforcement Learning for Futures Trading
+• Loaded, cleaned, and prepared price data on 78 futures contracts
+• Coded training, validation, and trading environments for use with OpenAI Gym
+• Implemented A2C, PPO, and DDPG reinforcement learning algorithms and combined them into one ensemble, AI-driven trading strategy
+Sentiment in Reporting: A data-driven analysis of bias in 15 major publications
+• Performed NLP and sentiment analysis on over 140,000 news articles
+• Used linear regression, ANOVA, and Tukey HSD hypothesis testing to highlight significant differences in reporting sentiment
+• Used Agglomerative Hierarchical clustering, K-Mean clustering, and DBSCAN to explore relationships between publications and divide news sources into groups based on political sentiment
+
+West Texas A&M University	Aug 2019 – May 2020
+Graduate Teaching Assistant	
+• Constructed course content and presentations on calculus, economics, and algebra
+• Lectures to 4 classes of 30+ students
+• Achieved a pass rate over 50% in a developmental course
+
+John Rizcallah EDUCATION	
+West Texas A&M University
+Master of Science, Mathematics	December 2020
+Applied Statistics Track
+Master’s Thesis – Detecting Bubbles in the USD-JPY Exchange Rate by Sequential Monte Carlo Methods
+• Implemented an SMC^2 nested particle filter to draw inference on bubble likelihood and parameter values simultaneously
+• Programmed the complex algorithm in R
+
+Bachelor of Science, Mathematics	May 2017
+        Minor: Communication Studies
+
+John Rizcallah CERTIFICATIONS	
+Datacamp
+Quantitative Analyst	Apr 2019
+Machine Learning Scientist	Oct 2020
+Data Scientist Professional	Jul 2021
+
+Neo4j Certified Professional	Dec 2021	

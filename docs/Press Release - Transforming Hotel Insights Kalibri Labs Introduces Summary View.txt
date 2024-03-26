@@ -1,0 +1,39 @@
+Jan 23, 2024
+Transforming Hotel Insights: Kalibri Labs Introduces 'Summary View'
+Kalibri Labs
+
+Discover the future of revenue optimization technology with Kalibri Labs' latest innovation, Summary View, designed to empower hoteliers with instant, comprehensive insights into their performance data.
+
+Kalibri Labs Announces the Launch of 'Summary View' in HummingbirdPXM
+[Potomac, MD] – [01/23/2024] – Kalibri Labs, a leader in revenue optimization technology for the hospitality industry, is proud to announce the launch of a new product module, 'Summary View,' in its flagship platform HummingbirdPXM. This innovative feature is set to revolutionize the way hotels analyze and utilize their performance data.
+
+About Summary View:
+Summary View is designed as a comprehensive solution for clients to quickly grasp their overall performance for any selected date range. This intuitive feature allows clients to gain immediate insights before diving deep into the data.
+
+Key Components of Summary View:
+1 - Data Ribbon
+   - The Data Ribbon displays five standard metrics: Percent (%) to Optimal, COPE RevPAR Index, Occupancy Index, COPE ADR Index, and Loyalty Index.
+   - The "% to Optimal" calculation helps clients understand their proximity to achieving the perfect mix of business, focusing on optimal rather than maximum performance.
+   - COPE RevPAR, Occupancy, ADR, and Loyalty Indices offer insights into the hotel's performance relative to their competitive set, encouraging a focus on optimal share over fair share.
+2 - Performance Graphs:
+   - Customizable graphs based on date part type (Day of Week, Month, Week, etc.).
+   - COPE RevPAR Performance graph with the date part on the X-axis and RevPAR range on the Y-axis.
+   - Occupancy & ADR Performance graph with Occupancy percentage on the X-axis and ADR range on the Y-axis.
+3 - Optimization View Graphs:
+   - Highlights the top three opportunities in terms of Room Nights, COPE RevPAR, and Opportunity amount.
+   - Interactive feature to toggle between rate categories, revealing potential revenue opportunities by segment and time series.
+
+User-Friendly Design:
+Summary View is equipped with a user-friendly interface. Hovering over each metric displays the subject performance versus the benchmark, compared to the previous date range. Green and red arrows indicate performance increases or decreases. Additionally, users can delve deeper into the data by selecting the carrot icon in the top right corner.
+
+What is Optimal Business Mix?
+Optimal Business Mix is a strategy that focuses on maximizing profitability by determining the best combination of business segments and channels for a hotel, taking into account various factors such as demand, competition, and cost. This approach goes beyond traditional benchmarking methods and provides a more targeted and data-driven way for hotels to optimize their revenue and profit performance.
+
+Availability:
+Summary View will be available to all HummingbirdPXM users from January 23, 2024.
+
+About Kalibri Labs:
+Kalibri Labs is at the forefront of technology and analytics in the hospitality sector. With a focus on commercial strategy and profit optimization, our platforms empower hotels to maximize their asset value and stay ahead in a competitive market.
+
+Contact:
+For more information about Summary View or to request a demo, please contact sales@kalibrilabs.com
