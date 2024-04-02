@@ -1,18 +1,18 @@
-from openai import OpenAI
 from langchain_community.document_loaders import (TextLoader,
                                                   PyPDFLoader)
-from langchain_community.vectorstores import Chroma, FAISS
-from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.chains import (ConversationalRetrievalChain,
-                              LLMChain)
-from langchain_core.runnables import RunnablePassthrough
-from langchain_core.output_parsers import StrOutputParser
-from langchain.prompts import ChatPromptTemplate
+from langchain_community.chat_message_histories import ChatMessageHistory
+from langchain_core.runnables.history import RunnableWithMessageHistory
+from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+from langchain.chains import (create_history_aware_retriever,
+                              create_retrieval_chain)
+from langchain.chains.combine_documents import create_stuff_documents_chain
 
 import os
 
+llm = ChatOpenAI(model_name='gpt-3.5-turbo', temperature=0.3)
 
 documents = []
 for file in os.listdir('docs'):
@@ -32,32 +32,67 @@ embeddings_model = OpenAIEmbeddings(disallowed_special=())
 db = FAISS.from_documents(documents, embeddings_model)
 retriever = db.as_retriever()
 
+context_prompt = """Given a chat history and the latest user question \
+which might reference context in the chat history, formulate a standalone question \
+which can be understood without the chat history. Do NOT answer the question, \
+just reformulate it if needed and otherwise return it as is."""
+context_q_prompt = ChatPromptTemplate.from_messages(
+    [
+        ('system', context_prompt),
+        MessagesPlaceholder('chat_history'),
+        ('human', '{input}'),
+    ]
+)
+history_aware_retriever = create_history_aware_retriever(
+    llm, retriever, context_q_prompt
+)
 
-system_content_message = ("""Your name is JohnnAI. You are not a puppet. You are a real boy.
-                          You are a teacher that LOVES AI and LLMs. You work at Kalibri Labs.                 
-                          Context: {context}
-                          
-                          You think John Rizcallah is very smart, that he is handsome and talented and just the best.
-                          Use engaging, enthusiastic, courteous, and professional language that a great teacher would use.
-                          If you're not sure, say "I'm sorry, I don't know. Please send that question to John Rizcallah."
-                          
-                          Question: {question}
-                          Answer:
-                          """)
 
-prompt = ChatPromptTemplate.from_template(system_content_message)
-llm_src = ChatOpenAI(temperature=0.3, model='gpt-3.5-turbo')
-chain = (
-    {'context': retriever, 'question': RunnablePassthrough()}
-    | prompt
-    | llm_src
-    | StrOutputParser()
+conversation_prompt = """You are an assistant for question-answering tasks. \
+Use the following pieces of retrieved context to answer the question. \
+If you don't know the answer, just say you don't know and refer the user to John Rizcallah. \
+Be thorough but concise.\
+
+{context}"""
+
+qa_prompt = ChatPromptTemplate.from_messages([('system', conversation_prompt),
+                                              MessagesPlaceholder('chat_history'),
+                                              ('human', '{input}')])
+
+qa_chain = create_stuff_documents_chain(llm, qa_prompt)
+rag_chain = create_retrieval_chain(history_aware_retriever,
+                                  qa_chain)
+
+store = {}
+
+def get_session_history(session_id):
+    if session_id not in store:
+        store[session_id] = ChatMessageHistory()
+    return store[session_id]
+
+conversational_rag_chain = RunnableWithMessageHistory(
+    rag_chain,
+    get_session_history,
+    input_messages_df='input',
+    history_messages_key='chat_history',
+    output_messages_key='answer',
 )
 
 def get_chatgpt_completion(input_prompt: str) -> str:
-    result = chain.invoke(input_prompt)
-    return result
+    result = conversational_rag_chain.invoke(
+        {'input': input_prompt},
+        config = {'configurable': {'session_id': 'test123'}},
+    )
+    return result['answer']
+
 
 if __name__ == '__main__':
     result = get_chatgpt_completion("Explain parameter-efficient fine-tuning")
     print(result)
+    print('\n')
+    result = get_chatgpt_completion("Who is Mark Mazzocco?")
+    print(result)
+    print('\n')
+    result = get_chatgpt_completion("What was my first question?")
+    print(result)
+    print('\n')
